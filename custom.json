@@ -69,5 +69,6 @@
             }
         },
         "name": "Product - custom",
+        "external_identifier": "custom"
     }
 ]

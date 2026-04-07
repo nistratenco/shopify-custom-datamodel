@@ -1,0 +1,74 @@
+[
+    {
+        "fields": {
+            "meta_field.custom::productgroep": {
+                "description": "",
+                "enrichment_level": 2,
+                "key": "meta_field.custom::productgroep",
+                "label": "Productgroep",
+                "multi_value": 0,
+                "storage_class": "varchar",
+                "validation_data": [],
+                "validation_options": [],
+                "content_level": 1
+            },
+            "meta_field.custom::aantal": {
+                "description": "",
+                "enrichment_level": 2,
+                "key": "meta_field.custom::aantal",
+                "label": "Aantal",
+                "multi_value": 0,
+                "storage_class": "integer",
+                "validation_data": [],
+                "validation_options": [],
+                "content_level": 1
+            },
+            "meta_field.custom::kleur": {
+                "description": "",
+                "enrichment_level": 2,
+                "key": "meta_field.custom::kleur",
+                "label": "Kleur",
+                "multi_value": 0,
+                "storage_class": "varchar",
+                "validation_data": [],
+                "validation_options": [],
+                "content_level": 1
+            },
+            "meta_field.custom::boormaten": {
+                "description": "",
+                "enrichment_level": 2,
+                "key": "meta_field.custom::boormaten",
+                "label": "Boormaten",
+                "multi_value": 0,
+                "storage_class": "varchar",
+                "validation_data": [],
+                "validation_options": [],
+                "content_level": 1
+            },
+            "meta_field.custom::extra_tekst": {
+                "description": "",
+                "enrichment_level": 2,
+                "key": "meta_field.custom::extra_tekst",
+                "label": "Extra tekst",
+                "multi_value": 0,
+                "storage_class": "html",
+                "validation_data": [],
+                "validation_options": [],
+                "content_level": 1
+            },
+            "meta_field.custom::rating_count": {
+                "description": "",
+                "enrichment_level": 2,
+                "key": "meta_field.custom::rating_count",
+                "label": "Product rating count",
+                "multi_value": 0,
+                "storage_class": "varchar",
+                "validation_data": [],
+                "validation_options": [],
+                "content_level": 1
+            }
+        },
+        "name": "Product - custom",
+        "external_identifier": "custom"
+    }
+]

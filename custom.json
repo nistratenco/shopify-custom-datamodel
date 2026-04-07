@@ -1,74 +1,501 @@
-[
-    {
-        "fields": {
-            "meta_field.custom::productgroep": {
-                "description": "",
-                "enrichment_level": 2,
-                "key": "meta_field.custom::productgroep",
-                "label": "Productgroep",
-                "multi_value": 0,
-                "storage_class": "varchar",
-                "validation_data": [],
-                "validation_options": [],
-                "content_level": 1
-            },
-            "meta_field.custom::aantal": {
-                "description": "",
-                "enrichment_level": 2,
-                "key": "meta_field.custom::aantal",
-                "label": "Aantal",
-                "multi_value": 0,
-                "storage_class": "integer",
-                "validation_data": [],
-                "validation_options": [],
-                "content_level": 1
-            },
-            "meta_field.custom::kleur": {
-                "description": "",
-                "enrichment_level": 2,
-                "key": "meta_field.custom::kleur",
-                "label": "Kleur",
-                "multi_value": 0,
-                "storage_class": "varchar",
-                "validation_data": [],
-                "validation_options": [],
-                "content_level": 1
-            },
-            "meta_field.custom::boormaten": {
-                "description": "",
-                "enrichment_level": 2,
-                "key": "meta_field.custom::boormaten",
-                "label": "Boormaten",
-                "multi_value": 0,
-                "storage_class": "varchar",
-                "validation_data": [],
-                "validation_options": [],
-                "content_level": 1
-            },
-            "meta_field.custom::extra_tekst": {
-                "description": "",
-                "enrichment_level": 2,
-                "key": "meta_field.custom::extra_tekst",
-                "label": "Extra tekst",
-                "multi_value": 0,
-                "storage_class": "html",
-                "validation_data": [],
-                "validation_options": [],
-                "content_level": 1
-            },
-            "meta_field.custom::rating_count": {
-                "description": "",
-                "enrichment_level": 2,
-                "key": "meta_field.custom::rating_count",
-                "label": "Product rating count",
-                "multi_value": 0,
-                "storage_class": "varchar",
-                "validation_data": [],
-                "validation_options": [],
-                "content_level": 1
-            }
+{
+    "name": "Product",
+    "fields": [
+        {
+            "key": "variant_option.0",
+            "label": "Option value 1",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 0
         },
-        "name": "Product - custom",
-        "external_identifier": "custom"
-    }
-]
+        {
+            "key": "variant_option.1",
+            "label": "Option value 2",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 0,
+            "content_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": []
+        },
+        {
+            "key": "variant_option.2",
+            "label": "Option value 3",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 0
+        },
+        {
+            "key": "variant_image",
+            "label": "Variant image",
+            "multi_value": 0,
+            "storage_class": "image",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 0
+        },
+        {
+            "key": "variant_weight",
+            "label": "Variant weight",
+            "multi_value": 0,
+            "storage_class": "mass",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 0
+        },
+        {
+            "key": "product_title",
+            "label": "Title",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_body_html",
+            "label": "Description",
+            "multi_value": 0,
+            "storage_class": "full_html",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_cover_image",
+            "label": "Cover image",
+            "multi_value": 0,
+            "storage_class": "image",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_additional_images",
+            "label": "Additional images",
+            "multi_value": 1,
+            "storage_class": "image",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_tags",
+            "label": "Tags",
+            "multi_value": 1,
+            "storage_class": "varchar",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_type",
+            "label": "Product type",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_weight",
+            "label": "Weight",
+            "multi_value": 0,
+            "storage_class": "mass",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_vendor",
+            "label": "Vendor",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_option.0",
+            "label": "Option name 1",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "description": "",
+            "validation_data": {
+                "max_length": 255
+            },
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_option.1",
+            "label": "Option name 2",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "content_level": 1,
+            "description": "",
+            "validation_data": {
+                "max_length": 255
+            },
+            "validation_options": []
+        },
+        {
+            "key": "product_option.2",
+            "label": "Option name 3",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "description": "",
+            "validation_data": {
+                "max_length": 255
+            },
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_metafields_global_title_tag",
+            "label": "Product SEO Title",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_metafields_global_description_tag",
+            "label": "Product SEO Description",
+            "multi_value": 0,
+            "storage_class": "text",
+            "enrichment_level": 3,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_handle",
+            "label": "URL Handle",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "description": "The url slug only after the \/(slash).",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "variant_variant_option.0",
+            "label": "Option value 1",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 0
+        },
+        {
+            "key": "variant_variant_option.1",
+            "label": "Option value 2",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 0,
+            "content_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": []
+        },
+        {
+            "key": "variant_variant_option.2",
+            "label": "Option value 3",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 0
+        },
+        {
+            "key": "variant_variant_image",
+            "label": "Variant image",
+            "multi_value": 0,
+            "storage_class": "image",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 0
+        },
+        {
+            "key": "variant_variant_weight",
+            "label": "Variant weight",
+            "multi_value": 0,
+            "storage_class": "mass",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 0
+        },
+        {
+            "key": "product_product_title",
+            "label": "Title",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 0,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_body_html",
+            "label": "Description",
+            "multi_value": 0,
+            "storage_class": "full_html",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_cover_image",
+            "label": "Cover image",
+            "multi_value": 0,
+            "storage_class": "image",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_additional_images",
+            "label": "Additional images",
+            "multi_value": 1,
+            "storage_class": "image",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_tags",
+            "label": "Tags",
+            "multi_value": 1,
+            "storage_class": "varchar",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_product_type",
+            "label": "Product type",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 1,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_weight",
+            "label": "Weight",
+            "multi_value": 0,
+            "storage_class": "mass",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_vendor",
+            "label": "Vendor",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_option.0",
+            "label": "Option name 1",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "description": "",
+            "validation_data": {
+                "max_length": 255
+            },
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_option.1",
+            "label": "Option name 2",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "content_level": 1,
+            "description": "",
+            "validation_data": {
+                "max_length": 255
+            },
+            "validation_options": []
+        },
+        {
+            "key": "product_product_option.2",
+            "label": "Option name 3",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "description": "",
+            "validation_data": {
+                "max_length": 255
+            },
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_metafields_global_title_tag",
+            "label": "Product SEO Title",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_metafields_global_description_tag",
+            "label": "Product SEO Description",
+            "multi_value": 0,
+            "storage_class": "text",
+            "enrichment_level": 3,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_product_handle",
+            "label": "URL Handle",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 3,
+            "description": "The url slug only after the \/(slash).",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_meta_field.custom::productgroep",
+            "label": "Productgroep",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_meta_field.custom::aantal",
+            "label": "Aantal",
+            "multi_value": 0,
+            "storage_class": "integer",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_meta_field.custom::kleur",
+            "label": "Kleur",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_meta_field.custom::boormaten",
+            "label": "Boormaten",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_meta_field.custom::extra_tekst",
+            "label": "Extra tekst",
+            "multi_value": 0,
+            "storage_class": "html",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        },
+        {
+            "key": "product_meta_field.custom::rating_count",
+            "label": "Product rating count",
+            "multi_value": 0,
+            "storage_class": "varchar",
+            "enrichment_level": 2,
+            "description": "",
+            "validation_data": [],
+            "validation_options": [],
+            "content_level": 1
+        }
+    ]
+}
